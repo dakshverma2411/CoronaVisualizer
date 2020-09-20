@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/grey">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort By"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:id="@+id/sortRadioGroup">
+
+        <RadioButton
+            android:id="@+id/radioButtonAlpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:buttonTint="@color/white"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="Alphabetically"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTotal"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Cases"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonActive"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Active Cases"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonRecovered"
+            android:padding="10dp"
+            android:buttonTint="@color/white"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="Recovered Cases"
+            android:textColor="@color/white" />
+    </RadioGroup>
+</LinearLayout>
