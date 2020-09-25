@@ -26,7 +26,9 @@
             android:foregroundTint="#FFFFFF"
             android:searchHintIcon="@android:drawable/ic_menu_search"
             android:searchIcon="@android:drawable/ic_menu_search"
-            android:voiceIcon="@android:drawable/ic_btn_speak_now" />
+            android:voiceIcon="@android:drawable/ic_btn_speak_now" >
+
+        </SearchView>
     </androidx.cardview.widget.CardView>
 
     <FrameLayout
@@ -46,5 +48,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            app:srcCompat="?attr/actionModePasteDrawable" />
+
     </FrameLayout>
+
 </LinearLayout>

@@ -25,25 +25,44 @@
 
             <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/graph_in_card"
-                android:layout_width="220dp"
-                android:layout_height="150dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp" />
+                android:layout_width="140dp"
+                android:layout_centerVertical="true"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"/>
 
             <TextView
                 android:id="@+id/graph_name"
                 android:layout_width="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/graph_in_card"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/graph_in_card"
                 android:text="Title of graph"
                 android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/graph_name"
+                android:layout_toRightOf="@id/graph_in_card"
+                android:text="Today :"
+                android:id="@+id/vis_today"
+                android:textStyle="italic"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vis_today"
+                android:layout_toRightOf="@id/graph_in_card"
+                android:text="Yesterday :"
+                android:id="@+id/vis_yesterday"
+                android:textStyle="italic"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"/>
+
+
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </RelativeLayout>

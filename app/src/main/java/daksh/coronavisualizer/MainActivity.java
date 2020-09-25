@@ -46,6 +46,10 @@ import Utils.sortByTotalCases;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
 
+    // TODO(2) add a activity for news api and implement
+    // TODO(3) add detailed activity
+    // TODO(4) implement the search bar
+    // TODO(5) add the notification feature using services -- last priority
     private final int LOADER_ID = 11;
     private RecyclerView recyclerView;
     private ArrayList<ListItems> entries;
